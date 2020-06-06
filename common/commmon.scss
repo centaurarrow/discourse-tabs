@@ -1,12 +1,13 @@
 .tabs {
   /* width: 20em; */
-  width: 250px;
+  width: 235px;
   font-family: "lucida grande", sans-serif;
 }
 
 [role="tablist"] {
   margin: 0 0 -0.1em;
   overflow: visible;
+text-align: center;
 }
 
 [role="tab"] {
@@ -15,7 +16,7 @@
   padding: 0.3em 0.5em 0.4em;
   border: 1px solid hsl(219, 1%, 72%);
   border-radius: 0.2em 0.2em 0 0;
-  box-shadow: 0 0 0.2em hsl(219, 1%, 72%);
+  //box-shadow: 0 0 0.2em hsl(219, 1%, 72%);
   overflow: visible;
   font-family: inherit;
   font-size: inherit;
@@ -36,12 +37,13 @@
 
 [role="tab"][aria-selected="true"] {
   border-radius: 0;
-  background: hsl(220, 43%, 99%);
+  //background: hsl(220, 43%, 99%);
+  background: #fff;
   outline: 0;
 }
 
 [role="tab"][aria-selected="true"]:not(:focus):not(:hover)::before {
-  border-top: 5px solid hsl(218, 96%, 48%);
+  //border-top: 5px solid hsl(218, 96%, 48%);
 }
 
 [role="tab"][aria-selected="true"]::after {
@@ -51,7 +53,8 @@
   right: 0;
   left: 0;
   height: 0.3em;
-  background: hsl(220, 43%, 99%);
+ // background: hsl(220, 43%, 99%);
+  background : #fff;
   box-shadow: none;
   content: '';
 }
@@ -72,11 +75,11 @@
 [role="tabpanel"] {
   position: relative;
   z-index: 2;
-  padding: 0.5em 0.5em 0.7em;
-  border: 1px solid hsl(219, 1%, 72%);
-  border-radius: 0 0.2em 0.2em 0.2em;
-  box-shadow: 0 0 0.2em hsl(219, 1%, 72%);
-  background: hsl(220, 43%, 99%);
+  //padding: 0.5em 0.5em 0.7em;
+ // border: 1px solid hsl(219, 1%, 72%);
+ // border-radius: 0 0.2em 0.2em 0.2em;
+//  box-shadow: 0 0 0.2em hsl(219, 1%, 72%);
+ // background: hsl(220, 43%, 99%);
 }
 
 [role="tabpanel"]:focus {
@@ -101,4 +104,12 @@
 
 [role="tabpanel"] * + p {
   margin-top: 1em;
+}
+
+.holds-the-iframe {
+ // background:url(https://whattheforum-assets.s3.dualstack.us-east-2.amazonaws.com/original/2X/2/230d5c13ff70f0d5e3ff79d6c285f2bc645d7758.gif) center center no-repeat;
+  background-size: 45px 45px;
+  min-height:300px;
+  // opacity:0.5;
+
 }
